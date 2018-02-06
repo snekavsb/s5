@@ -1,15 +1,15 @@
 #include <stdio.h>
 
 int main(void) {
-int i,n=6,s=0;
+int i,n=6,c=0;
 for(i=1;i<=n;i++)
 {
 	if(n%i==0)
 	{
-		s++;
+		c++;
 	}
 }
-	if(s!=2)
+	if(c!=2)
 	{
 		printf("composite");
 	}
