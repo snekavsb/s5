@@ -3,7 +3,7 @@
 int main(void) {
 	int i,n;
 	scanf("%d\n",&n);
-	if(n>1&&n<10)
+	if(n>=1&&n=<10)
 	{
 		printf("yes");
 
