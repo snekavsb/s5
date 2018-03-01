@@ -6,7 +6,7 @@ int main(void) {
 	while(n!=0)
 	{
 		b=n%10;
-	            t=c++;
+	            t=++c;
 	            n=n/10;
 	}
 		printf("%d\n",t);
