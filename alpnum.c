@@ -1,14 +1,23 @@
 #include <stdio.h>
 
 int main(void) {
-char i;
-scanf("%c\n",i);
-if(((i>'a'&&i<'z')||(i>'A'&&i<'Z'))||(i>1&&i<1000))
+char a[18];
+int i,c=0,c1=0;
+scanf("%s",a);
+for(i=0;a[i]!='\0';i++){
+if((a[i]>='a'&&a[i]<='z')||(a[i]>='A'&&a[i]<='Z'))
 {
-	printf("both alphabets and numbers");
+	c++;
 }
-
-else
-{}
+else if(a[i]>=1||a[i]<=1000)
+{
+	c1++;
+}
+else{}
+}
+if(c>0&&c1>0)
+{
+	printf("yes");
+}
 	return 0;
 }
