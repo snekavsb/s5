@@ -1,18 +1,16 @@
-#include <stdio.h>
+include <stdio.h>
 
 int main(void) {
-	int i,n;
-	scanf("%d\n",&n);
-	for(i=1;i<=n;i++)
+	
+	int i;
+	char a[6];
+	scanf("%s",a);
+	for(i=1;a[i]!='\0';i++)
 	{
-	
-	if(i%2!=0)
-	{
-		printf("%d\nodd",i);
+		if(a[i]%2!=0)
+		{
+			printf("%s",a[i]);
+		}
 	}
-	
-	}
-
-	
 	return 0;
 }
